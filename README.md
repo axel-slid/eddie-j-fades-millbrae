@@ -17,11 +17,11 @@ npm run dev
 - Rating: 5.0 from 208 reviews
 - Mobile service noted
 - Gift cards noted
-- Business note: text to confirm appointment availability because the business is on multiple booking sites, and call for same-day appointments
+- Booking URL: https://booksy.com/en-us/90164_eddie-j-fades-best-barbershop-haircuts-millbrae_barber-shop_103239_millbrae#ba_s=sgr_1
+- Business note: call for same-day appointments
 
 ## Owner updates still needed
 
-- Confirmed booking URL or Booksy profile URL
 - Real logo and shop photos
 - Hours
 - Full service menu, durations, and pricing

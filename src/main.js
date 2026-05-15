@@ -4,7 +4,6 @@ const menuButton = document.querySelector("[data-menu-button]");
 const nav = document.querySelector("[data-nav]");
 const hero = document.querySelector("[data-motion-hero]");
 const revealItems = document.querySelectorAll(".reveal");
-const bookingForm = document.querySelector("[data-booking-form]");
 
 body.classList.add("motion-ready");
 
@@ -66,33 +65,3 @@ if ("IntersectionObserver" in window) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
-
-const getBookingMessage = () => {
-  if (!(bookingForm instanceof HTMLFormElement)) return "";
-
-  const formData = new FormData(bookingForm);
-  const name = String(formData.get("name") || "").trim();
-  const service = String(formData.get("service") || "").trim();
-  const day = String(formData.get("day") || "").trim();
-  const time = String(formData.get("time") || "").trim();
-  const notes = String(formData.get("notes") || "").trim();
-
-  return [
-    "Hi Eddie J. Fades, I would like to confirm appointment availability.",
-    `Name: ${name || "Not provided"}`,
-    `Service: ${service || "Not selected"}`,
-    `Preferred day: ${day || "Not provided"}`,
-    `Preferred time: ${time || "Not provided"}`,
-    `Notes: ${notes || "None"}`,
-  ].join("\n");
-};
-
-bookingForm?.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  if (!(bookingForm instanceof HTMLFormElement) || !bookingForm.reportValidity()) {
-    return;
-  }
-
-  window.location.href = `sms:+14155770511?body=${encodeURIComponent(getBookingMessage())}`;
-});
