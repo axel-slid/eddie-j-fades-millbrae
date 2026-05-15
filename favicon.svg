@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Eddie J Fades">
+  <rect width="64" height="64" rx="14" fill="#111111"/>
+  <path d="M10 10h44v44H10z" fill="none" stroke="#c59a4a" stroke-width="3"/>
+  <path d="M18 43V21h15v5H24v4h8v5h-8v3h10v5H18Zm23 0c-4.5 0-7-2.5-7-6.4h5.3c0 1.2.7 2 1.9 2 1.4 0 2.1-.8 2.1-2.5V21h5.5v15.1c0 4.5-2.8 6.9-7.8 6.9Z" fill="#fffaf1"/>
+</svg>

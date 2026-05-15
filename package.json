@@ -1,0 +1,14 @@
+{
+  "name": "eddie-j-fades-millbrae",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Static website for Eddie J. Fades Best Barbershop Haircuts Millbrae.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
