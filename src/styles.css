@@ -293,6 +293,39 @@ h3 {
   padding: clamp(64px, 9vw, 112px) clamp(20px, 5vw, 72px);
 }
 
+.map-strip {
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 0;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1fr);
+}
+
+.map-copy {
+  align-self: center;
+  padding: clamp(34px, 6vw, 68px) clamp(20px, 5vw, 72px);
+}
+
+.map-copy p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 18px 0 0;
+  max-width: 560px;
+}
+
+.map-copy .button {
+  margin-top: 26px;
+}
+
+.map-strip iframe {
+  border: 0;
+  display: block;
+  height: 420px;
+  min-height: 100%;
+  width: 100%;
+}
+
 .split {
   display: grid;
   gap: 42px;
@@ -300,7 +333,6 @@ h3 {
 }
 
 .section-heading p,
-.two-column p,
 .review-panel p {
   color: var(--muted);
   font-size: 17px;
@@ -316,6 +348,7 @@ h3 {
 .service-grid {
   display: grid;
   gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .service-card {
@@ -375,47 +408,6 @@ h3 {
 
 .review-metric small {
   color: rgba(255, 250, 241, 0.76);
-  margin-top: 8px;
-}
-
-.two-column {
-  align-items: center;
-  display: grid;
-  gap: 42px;
-  grid-template-columns: minmax(0, 1fr) 300px;
-}
-
-.gift-card {
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent),
-    var(--charcoal);
-  border: 1px solid var(--gold);
-  border-radius: 14px;
-  box-shadow: var(--shadow);
-  color: var(--cream);
-  min-height: 190px;
-  padding: 28px;
-}
-
-.gift-card span,
-.gift-card strong,
-.gift-card small {
-  display: block;
-}
-
-.gift-card span {
-  color: var(--gold);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 48px;
-}
-
-.gift-card strong {
-  font-size: 26px;
-  margin-top: 28px;
-}
-
-.gift-card small {
-  color: rgba(255, 250, 241, 0.68);
   margin-top: 8px;
 }
 
@@ -531,10 +523,18 @@ footer p {
     display: flex;
   }
 
+  .map-strip,
   .split,
   .band,
-  .two-column,
   .visit {
+    grid-template-columns: 1fr;
+  }
+
+  .map-strip iframe {
+    min-height: 340px;
+  }
+
+  .service-grid {
     grid-template-columns: 1fr;
   }
 
