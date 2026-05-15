@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/eddie-j-fades-millbrae/",
+  base: process.env.GITHUB_ACTIONS ? "/eddie-j-fades-millbrae/" : "/",
 });
